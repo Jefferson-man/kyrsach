@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог товарів</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="categories-menu">
+  <div class="container">
+    <ul class="categories-list" id="categories-nav">
+      <!-- Категории будут добавлены динамически через JavaScript -->
+    </ul>
+  </div>
+</nav>
+  <main>
+    <h1>Каталог товарів</h1>
+    <!-- Формы для админа -->
+    <div id="add-category-form" style="display: none;">
+      <h2>Додати категорію</h2>
+      <form id="category-form">
+        <input type="text" id="category-name" placeholder="Назва категорії" required>
+        <button type="submit">Додати категорію</button>
+      </form>
+    </div>
+
+    <div id="add-product-form" style="display: none;">
+      <h2>Додати товар</h2>
+      <form id="product-form">
+        <input type="text" id="product-name" placeholder="Назва товару" required>
+        <input type="text" id="product-description" placeholder="Опис товару" required>
+        <input type="number" id="product-price" placeholder="Ціна" required>
+        <input type="text" id="product-image" placeholder="URL зображення">
+        <select id="product-category" required>
+          <option value="">Оберіть категорію</option>
+        </select>
+        <button type="submit">Додати товар</button>
+      </form>
+    </div>
+
+    <!-- Список товаров -->
+    <div class="product-list" id="product-list"></div>
+  </main>
+
+  <script src="/js/loadHeader.js"></script>
+  <script src="/js/index.js"></script>
+</body>
+</html>

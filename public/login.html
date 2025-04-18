@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вхід</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main>
+        <form id="login-form" class="auth-form"> <!-- Додано клас auth-form -->
+            <h1>Вхід</h1>
+            <div class="input-group">
+                <label for="username">Логін:</label>
+                <input type="text" id="username" name="username" required placeholder="Введіть ваш логін">
+            </div>
+            <div class="input-group">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" required placeholder="Введіть ваш пароль">
+            </div>
+            <div class="input-group">
+                <button type="submit">Увійти</button>
+            </div>
+            <p>Ще немає акаунту? <a href="register.html">Зареєструйтесь тут</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Онлайн-каталог товарів</p>
+    </footer>
+    <script src="js/loadHeader.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
